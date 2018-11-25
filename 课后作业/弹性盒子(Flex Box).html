@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    *
+    {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       list-style: none;
+    }
+    .head .front
+    {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-wrap：wrap ；
+        弹性容器为多行。该情况下弹性子项溢出的部分会被放置到新行，子项内部会发生断行。 */
+    }
+    .head .centre
+    {
+        display: flex;
+    }
+    @media all and (min-width:40em)
+    {
+        .front li
+        {
+            width: 50%;
+        }
+        .head .front li
+        {
+            float: left;
+        }
+    }
+    @media all and (min-width:40em) and (max-width:60em)
+    {
+        .head .front li:nth-child(2n+1)
+        {
+            clear: both;
+            /* 图像的左侧和右侧均不允许出现浮动元素 */
+        }
+    }
+    @media all and (min-width:60em)
+    {
+        .front li
+        {
+            width:33.33%;
+        }
+    }
+    .head .front li:nth-child(3n+1)
+    {
+        clear:both;
+    }
+    .head .interio
+    {
+        display:flex;
+        flex-direction:column;
+    }
+    .head .sign-b 
+    {
+         display:flex;
+         flex:1 0 auto; /* We have to add a basis for IE10/11 */
+         flex-direction:column;
+    } 
+    .head .sign-b p 
+    {
+        flex:1 0 auto; /* We have to add a basis for IE10/11 */
+    }
+    </style>
+</head>
+<body>
+   <figure class="head">
+       <ul class="front">
+
+           <li class="centre">
+               <div class="interio">
+                   <div class="sign-a">
+                       <img src="https://f11.baidu.com/it/u=3047269893,3985150503&fm=72" alt="">
+                   </div>
+                   <div class="sign-b">
+                       <h1></h1>
+                       <p>Glad to meet you</p>
+                       <a href="#" class="sign-c">法国</a>
+                   </div>
+               </div>
+           </li>
+
+           <li class="centre">
+            <div class="interio">
+                <div class="sign-a">
+                    <img src="https://f11.baidu.com/it/u=3047269893,3985150503&fm=72" alt="">
+                </div>
+                <div class="sign-b">
+                    <h1></h1>
+                    <p>Glad to meet you</p>
+                    <a href="#" class="sign-c">法国</a>
+                </div>
+            </div>
+        </li>
+        <li class="centre">
+            <div class="interio">
+                <div class="sign-a">
+                    <img src="https://f11.baidu.com/it/u=3047269893,3985150503&fm=72" alt="">
+                </div>
+                <div class="sign-b">
+                    <h1></h1>
+                    <p>Glad to meet you</p>
+                    <a href="#" class="sign-c">法国</a>
+                </div>
+            </div>
+        </li>
+        <li class="centre">
+            <div class="interio">
+                <div class="sign-a">
+                    <img src="https://f11.baidu.com/it/u=3047269893,3985150503&fm=72" alt="">
+                </div>
+                <div class="sign-b">
+                    <h1></h1>
+                    <p>Glad to meet you</p>
+                    <a href="#" class="sign-c">法国</a>
+                </div>
+            </div>
+        </li>
+        <li class="centre">
+            <div class="interio">
+                <div class="sign-a">
+                    <img src="https://f11.baidu.com/it/u=3047269893,3985150503&fm=72" alt="">
+                </div>
+                <div class="sign-b">
+                    <h1></h1>
+                    <p>Glad to meet you</p>
+                    <a href="#" class="sign-c">法国</a>
+                </div>
+            </div>
+        </li>
+        <li class="centre">
+            <div class="interio">
+                <div class="sign-a">
+                    <img src="https://f11.baidu.com/it/u=3047269893,3985150503&fm=72" alt="">
+                </div>
+                <div class="sign-b">
+                    <h1></h1>
+                    <p>Glad to meet you</p>
+                    <a href="#" class="sign-c">法国</a>
+                </div>
+            </div>
+        </li>
+       </ul>
+   </figure>
+
+</body>
+</html>

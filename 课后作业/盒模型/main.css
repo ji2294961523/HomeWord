@@ -1,0 +1,44 @@
+html,body,div,dl,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 12px/1.5 "Microsoft yahel",arial,Simsun,sans-serif;
+    color:#333;
+    background-color:#fff;
+}
+ul{
+    list-style: none;
+}
+ 
+.mod{
+    width: 980px;
+    margin: 20px auto;
+
+   
+}
+.mod .mod-content{
+    height: 312px;
+    border: 1px solid #e0eee0;
+    border-top-width: 0px;
+}
+.mod .top{
+    height: 54px;
+    background-color:red;
+    border: 1px solid #e0eee0;
+    border-top-width: 0px;
+}
+.mod .left{
+    width: 184px;
+    float: left;
+    height: 313px;
+    border-right: 1px dotted #a3a3a3;
+  
+}
+.mod .right{
+    height: 312;
+    float: left;
+    width: 759px;
+    padding: 12px 17px 13px 15px;
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+     *
+     {
+        margin: 0;
+        padding: 0;
+        font-family: "华文琥珀";
+        font-size:15px;
+     }
+    .front
+    {
+       margin: auto;
+       width: 1500px;
+       height: 980px;
+       background:url(../新建文件夹/d.jpg) no-repeat;
+       position:relative; 
+    }
+    form
+    {
+        width: 350px;
+        height: 980px;
+        margin: 50px auto;
+        padding-left: 10px;
+        position: absolute;
+        left: 50%;
+        top: 10%;
+    }
+    h1
+    {                                  
+	    text-align:center;
+	    margin:16px 0; 
+    }
+    p
+    {
+       margin: 30px 0;
+       
+       
+    }
+    .sign
+    {
+        display: inline-block;
+        padding: 0 15px;
+        text-align: right;
+    }   
+    input
+    {
+        width: 150px;
+        height: 20px;
+    }
+    .sign-a input
+    {
+        width: 50px;
+        height: 40px;
+        margin-left:75px; 
+    }
+    </style>
+</head>
+<body>
+    <div class="front">
+        <form action="#" autocomplete="on" method="	get">
+           <h1>个人信息验证</h1>
+           <p><span class="sign">姓名:</span><input type="text"><span>*</span>(必填写项)</p>
+           <p><span class="sign">性别:</span><input list="browser" name="browser" placeholder="男"><span>*</span>(必填写项)
+            <datalist>
+                    <option value="男">
+                    <option value="女">
+            </datalist>
+          </p>
+           <p><span class="sign">出生日期:</span><input type="date"> (可选项)</p>
+           <p><span class="sign">身份证:</span><input type="number" pattern="^[1-9]\d{5}(18|19|2([0-9]))\d{2}(0[0-9]|10|11|12)([0-2][1-9]|30|31)\d{3}[0-9Xx]$"><span>*</span>(必填写项)</p>
+           <p><span class="sign">户籍所在地:</span><input type="text"><span>*</span>(必填写项)</p>
+           <p><span class="sign">手机号码:</span><input type="tel" pattern="^((/(/d{3}/))|(/d{3}/-))?13[0-9]/d{8}|15[89]/d{8}"> (可选项)</p>
+           <p><span class="sign">政治面貌:</span><input list="browsers" name="browser" placeholder="中国共产党"><span>*</span>(必填写项)
+              <datalist>
+                <option value="中国共产党">
+                <option value="中国国民党革命委员会">
+                <option value="中国民主同盟">
+                <option value="中国民主建国会">
+                <option value="中国民主促进会">
+                <option value="中国农工民主党">
+                <option value="中国致公党">
+                <option value="九三学社">
+                <option value="台湾民主同盟">
+              </datalist>
+           </p>
+           <p class="sign-a">
+           <input type="submit" value="确定">
+           <input type="reset" value="重置">
+           </p>
+        </form>
+    </div>
+    
+</body>
+</html>

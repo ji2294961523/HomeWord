@@ -1,0 +1,72 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+body
+{
+    color: black;
+    font-size: 16px;
+    font-family: "隶书";
+}
+.attribute
+{
+   margin: 0 auto; 
+   width: 980px;
+   height: 114px;
+   background-color: #525252;
+   text-align: center;
+}
+.gauge
+{
+ text-align: center;
+ margin: 0 auto;
+ width: 980px;
+} 
+.gauge h1
+{
+font-size: 18px;
+line-height: 40px;
+text-align: left;
+color: black;
+}
+hr
+{
+    size: 2%;
+    color: #dcdcdc;
+    width: 980px;
+}
+.centre{
+	width:980px;
+	margin:0 auto;
+	color:#7c251c;
+	font-size: 30px;
+	text-align: center;
+}
+.centre h4
+{
+line-height: 30px;
+}
+.centre h5
+{
+line-height: 30px;
+font-size: 20px;
+}
+.centre p
+{
+    font-size: 20px;
+    text-align: left;
+    text-indent: zem;
+    color: #303131;
+}
+centre p i
+{
+    font-size: 30px;
+    color: #7c251c;
+}
+.centre p strong,.centre p u{color:#7c251c;}
+.centre p u{font-size: 24px;}
+.centre p b{background-color: #f5ee30;}
+
+
+
