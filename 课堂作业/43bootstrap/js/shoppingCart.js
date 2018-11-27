@@ -151,24 +151,7 @@ class ShoppingCart {
     }
     if(flag)this.setDataToLocalSatorge(cartData);
   }
-  find(id){
-   let cartData=this.getDataFromLocalStorage();
-   let orderList=cartData.orderList;
-   let index=null;
-   for(const i in orderList){
-       if(id==orderList[i].id){
-           index=i;
-           break;
-       }
-   }
-   if(index 1= null) {
-       return orderList[index];
-   }
-   else {
-       return null;
-   }
   
-  }
   //删除指定id的订单
   deleteItem(id)
   {
@@ -186,7 +169,6 @@ class ShoppingCart {
        cartData.units--;
        this.setDataToLocalSatorge(cartData);
    }
-   
   }
 }
   
