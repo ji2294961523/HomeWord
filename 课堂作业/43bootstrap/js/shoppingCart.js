@@ -4,6 +4,7 @@ localStorage.getItem("key");//获取存储的变量key的值
 
 localStorage.removeItem("key")//删除变量名为key的存储变量
 
+
 // 商品类
 class Product {
   constructor(id, title, imgSrc, price) {
