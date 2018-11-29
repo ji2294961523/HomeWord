@@ -1,7 +1,5 @@
 var cart=new ShoppingCart();
-const dataNameJson={
- 
-}
+
 console.log(cart);
 // console.log(cart.getDataFromLocalStorage());
 function displayorderlist(){
@@ -17,6 +15,7 @@ console.log(orderList);
 
 //找父元素
 let cartNone=document.querySelector('#cartContent');
+console.log(cartNone);
 //找样本节点
 let exampNone=document.querySelector('#orderExample');
 console.log(exampNone);
