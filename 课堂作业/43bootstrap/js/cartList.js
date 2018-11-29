@@ -1,4 +1,7 @@
 var cart=new ShoppingCart();
+const dataNameJson={
+ 
+}
 console.log(cart);
 // console.log(cart.getDataFromLocalStorage());
 function displayorderlist(){
@@ -31,14 +34,32 @@ for (const i in orderList) {
     node.id=order.id;
     //图像地址
     //找图像节点
-    let imgNod=node.querySelector('[data-name="imgSrc"]');
-    console.log(imgNod);
-    imgNod.src='images/'+order.imgSrc;
+    let imgNode=node.querySelector('[data-name="imgSrc"]');
+    console.log(imgNode);
+    imgNode.src='images/'+order.imgSrc;
     node.classList.remove('d-none');
-    let selectNode=node.querySelector('[]');
+    //设选中状态
+    //找选中状态
+    let selectNode=node.querySelector('[data-name="checkItemt"]');
     selectNode.checked=order.selectStatus;
     console.log(selectNode);
-    console.log(node);
+
+    let priceNone=node.querySelector('[data-name="price"]');
+    priceNone.textContent=order.price;
+    console.log(priceNone);
+
+  let titleNode=node.querySelector('[data-name="title"]');
+  titleNode.textContent=order.title;
+  console.log(titleNode);
+   
+  let totalProduct=document.querySelector('[data-name="totalProduct"]');
+  totalProduct.textContent=cart.getSelectedQty();
+  console.log(totalProduct);
+
+  let totalPrice=document.querySelector('[data-name="totalPrice"]');
+  totalPrice.textContent=cart.getSelectedAmount();
+  console.log(totalPrice);
+
 // for(let i=0;i<orderList.length;i++){
 //     let order=orderList[i];
 //     console.log(order);
@@ -53,6 +74,11 @@ for (const i in orderList) {
 console.log(node);
 }
 }
+
+
+// function displaySelectedTotal(){
+//     let selectedTotalQtyNone=cartRoot.querySelector
+// }
 displayorderlist();
 
 // var cartData=cart.getDataFromLocalStorage();

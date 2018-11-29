@@ -131,7 +131,6 @@ class ShoppingCart {
       let cartData = this.getDataFromLocalStorage();       
       let orderList = cartData.orderList;
       let selectedAmount = 0;
-
       for (const key in orderList) {
           if (orderList[key].selectStatus) {
               selectedAmount += orderList[key].qty * orderList[key].price;
