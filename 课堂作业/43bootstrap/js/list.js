@@ -113,17 +113,21 @@ function regEvent() {
     // 获取清空购物车节点
     let element = cartRoot.querySelector(operatorGlobal.clearAll);
     console.log(element);
+    //获取一组删除按钮
+    var oBtn=document.getElementById("data-operato='deleteItem'");
     // 注册单击事件触发函数
     element.onclick = clearAllEventFun;
+    oBtn.onclick=deleteItemEventFun;
+}
+// 设计单击触发函数---独立函数 
+function deleteItemEventFun(e){
+   let 
 }
 
 // 清空事件触发函数
 function clearAllEventFun() {
     cart.clearCart();
-    for (let i=1;i<1;i++) {
-        location.reload()
-    }
-    
+    //   location.reload();
     // // 获取订单根节点
     // let cartListNode = document.querySelector('#cartList');
     // //保留样本节点
@@ -148,6 +152,7 @@ function init() {
     // 为所有操作节点注册事件
     regEvent();
     clearAllEventFun();
+    // deleteSelectedFun();
 }
 
 //调用初始化函数
