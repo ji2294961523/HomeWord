@@ -117,16 +117,32 @@ function regEvent() {
     var oBtn=document.getElementById("data-operato='deleteItem'");
     // 注册单击事件触发函数
     element.onclick = clearAllEventFun;
-    oBtn.onclick=deleteItemEventFun;
+    //
+    for(const key in element){
+        const element=element[key]
+    }
 }
-// 设计单击触发函数---独立函数 
+// 设计单击触发函数---独立函数
+//删除事件触发函数 
 function deleteItemEventFun(e){
-   let 
+   let button=e.target;
+   console.log(button);
+   let id =button.getAttribute('');
+   console.log(id);
+   cart.deleteItem(id);
+   let orderNone=document.getElementById(id);
+   cartList.removeChild(orderNone);
+   displaySelectedTotal();
 }
 
 // 清空事件触发函数
 function clearAllEventFun() {
     cart.clearCart();
+    let cartListNode=document.querySelector('#cartList');
+    let ExampleNode=(document.querySelector('#orderExample')).cloneNode(true);
+    cartListNode.innerHTML="";
+    cartListNode.appendChild(ExampleNode);
+    displaySelectedTotal();
     //   location.reload();
     // // 获取订单根节点
     // let cartListNode = document.querySelector('#cartList');
@@ -139,10 +155,6 @@ function clearAllEventFun() {
     // // 更新商品总数据
     // displaySelectedTotal();
 }
-//删除事件触发函数
-function deleteItemEventFun() {
-}
-
 // 初始化函数
 function init() {
     // 显示订单列表
