@@ -53,7 +53,7 @@ a:hover{
     margin: 0 auto;
 }
 
-.btn{
+.slider .btn{
     position: absolute;
     top:50%;
     width: 60px;
@@ -808,3 +808,5 @@ fieldset[disabled] .heima_nav .btn-link:focus {
 .heima_icon_partner09::before{
     content: "\e92d";
 }
+.slider li {
+    list-style:none;}
